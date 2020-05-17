@@ -75,6 +75,8 @@ h1 {
 
 #name{
     letter-spacing: -0.05em;
+    color: white;
+    font-size: 35px;
 }
 
 #kiste {
@@ -89,8 +91,9 @@ h1 {
     
 }
 h3{
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 3px;
+    color: #d47479;
 }
 
 .active {
