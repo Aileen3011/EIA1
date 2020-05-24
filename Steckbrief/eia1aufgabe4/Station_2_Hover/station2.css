@@ -1,0 +1,92 @@
+html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/bg.png);
+    display: flex;
+    margin: 0;
+}
+#wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    padding: 5%;
+    background-image:url(images/wrapperbg.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    
+    height: 400px;
+    width: 600px;
+    
+    
+    
+    
+}
+
+h1{
+    padding-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+}
+#muschel1:hover{
+    content: "";
+    background: url(images/muschel_perle.png);
+    
+}
+#muschel1{
+    float: left;
+    display: fixed;
+    margin-top: 150px;
+    margin-left: 80px;
+    height: 64px;
+    width: 70px;
+    background: url(images/muschel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    border-style: none;
+}
+#muschel2:hover{
+    content: "";
+    background: url(images/muschel_perle.png);
+    
+}
+#muschel2{
+    position: fixed;
+    
+    margin-top: 0px;
+    margin-left: 260px;
+    height: 64px;
+    width: 70px;
+    background: url(images/muschel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    border-style: none;
+}
+#muschel3:hover{
+    content: "";
+    background: url(images/muschel_perle.png);
+    
+}
+#muschel3{
+    position: fixed;
+    margin-top: 150px;
+    margin-left: 450px;
+    height: 64px;
+    width: 70px;
+    background: url(images/muschel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    border-style: none;
+}

@@ -1,0 +1,79 @@
+html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/bg.png);
+    display: flex;
+    margin: 0;
+}
+#wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    padding: 5%;
+    background-image:url(images/wrapperbg.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    color: black;
+    height: 400px;
+    width: 600px;
+    font-size: 20px;
+    
+    
+    
+    
+}
+
+h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 80px;
+    
+    color: white;
+    
+}
+p{
+    color: white;
+    padding-left: 5%;
+    padding-right: 30%;
+}
+#muschel1{
+    position: absolute;
+    margin-left: 90px;
+    margin-top: -270px;
+}
+#muschel2{
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 0px;
+}
+#muschel3{
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -300px;
+}
+#baum{
+    position: absolute;
+    margin-left: 430px;
+    margin-top: -180px;
+    height: 250px;
+    border: none;
+    
+}
+#stern1{
+    position: absolute;
+    margin-left: 100px;
+}
+#stern2{
+    position: absolute;
+    margin-left: 370px;
+    margin-top: -200px;
+}

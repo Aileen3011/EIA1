@@ -1,0 +1,43 @@
+html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/bg.png);
+    display: flex;
+    margin: 0;
+}
+#wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    padding: 5%;
+    
+    background-image:url(images/wrapperbg.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    
+    height: 400px;
+    width: 600px;
+    font-size: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#video{
+    margin: auto;
+}
+#band{
+    position: fixed;
+    margin-left: 260px;
+    margin-top: 165px;  
+}
