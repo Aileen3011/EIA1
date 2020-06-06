@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carbon Dioxide Emissions - EIA1 Task #5</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <img src="images/europe.png" class="europe" id="eu">
+        <img src="images/northamerica.png" class="northamerica" id="na">
+        <img src="images/southamerica.png" class="southamerica" id="sa">
+        <img src="images/africa.png" class="africa" id="af">
+        <img src="images/asia.png" class="asia" id="as">
+        <img src="images/australia.png" class="australia" id="au">
+    </nav>
+
+    <h1>
+        Carbon Dioxide Emissions in <span id="titleRegion">Europe</span>
+    </h1>
+
+            
+    <div class="chartWrapper">
+        <div id="chart"></div>
+    </div>
+    
+    <main>
+        <section>
+            <h2 id="inputAbs"></h2>
+            <p>Emission absolute of <span id="titleRegion2"></span> in 2018</p>
+        </section>
+        
+        <section>
+            <h2 id="rel"></h2>
+            <p>Relative to total world's emission</p>
+        </section>
+        
+        <section>
+            <h2 id="rate"></h2>
+            <p>Growth rate between 2008 and 2018 (in %)</p>
+        </section>
+        
+        <section>
+            <h2 id="rateAbs"></h2>
+            <p>Growth rate between 2008 and 2018 (absolute)</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Values in kg CO2 per TJ. Source https://www.statista.com/</p>
+    </footer>
+    
+</body>
+</html>
