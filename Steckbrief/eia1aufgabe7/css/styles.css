@@ -1,0 +1,40 @@
+#wrapper{
+    width: 500px;
+    margin:auto;
+    height: 500px;
+    padding-top: 3%;
+    padding-left: 2%;
+}
+
+.button{
+    height: 30%;
+    width: 30%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 0;
+    border-radius: 8px;
+    border: none;
+}
+.drums{
+    background-color: #2a77df;
+}
+.rings{
+    background-color: #f21386;
+}
+.laughs{
+    background-color: #d0730c;
+}
+body{
+    background-color: #000000;
+}
+#play{
+    width: 30%;
+    margin: auto;
+    margin-left: 35%;
+}
+#wrapplay{
+    width: 500px;
+    margin: auto;
+}

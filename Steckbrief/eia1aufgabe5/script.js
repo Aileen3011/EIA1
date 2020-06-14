@@ -78,4 +78,3 @@ window.onload = function () {
     document.getElementById("percent2008to18").innerHTML = String(EUP.toLocaleString(undefined, { minimumFractionDigits: 2 }) + " %");
     document.getElementById("2008to18abs").innerHTML = String(EUO.toLocaleString(undefined, { minimumFractionDigits: 2 })) + " kg CO2";
 };
-//# sourceMappingURL=script.js.map

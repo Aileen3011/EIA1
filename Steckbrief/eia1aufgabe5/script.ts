@@ -10,7 +10,7 @@ for (var i = 0; i < DataNorthAmerica.length; i++) {
 NorthAmerica = NorthAmerica + DataNorthAmerica[i];
 }
 
-var Asia = 0;
+var Asia:number = 0;
 var DataAsia = [12954.7 , 13246.6 , 13986.8 , 14860.1 , 15308.8 , 15660.2 , 15787.7 , 15877 , 15984 , 16274.3 , 16274.1];
 for (var i = 0; i < DataAsia.length; i++) {
     Asia = Asia + DataAsia[i];
