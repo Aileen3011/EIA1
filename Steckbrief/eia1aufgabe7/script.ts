@@ -1,12 +1,12 @@
-var soundA:any = new Audio('assets/A.mp3');
-var soundC:any = new Audio('assets/C.mp3');
-var soundF:any = new Audio('assets/F.mp3');
-var soundG:any = new Audio('assets/G.mp3');
-var soundhihat:any = new Audio('assets/hihat.mp3');
-var soundkick:any = new Audio('assets/kick.mp3');
-var soundlaugh1:any = new Audio('assets/laugh-1.mp3');
-var soundlaugh2:any = new Audio('assets/laugh-2.mp3');
-var soundsnare:any = new Audio('assets/snare.mp3');
+var soundA:HTMLAudioElement = new Audio('assets/A.mp3');
+var soundC:HTMLAudioElement = new Audio('assets/C.mp3');
+var soundF:HTMLAudioElement = new Audio('assets/F.mp3');
+var soundG:HTMLAudioElement = new Audio('assets/G.mp3');
+var soundhihat:HTMLAudioElement = new Audio('assets/hihat.mp3');
+var soundkick:HTMLAudioElement = new Audio('assets/kick.mp3');
+var soundlaugh1:HTMLAudioElement = new Audio('assets/laugh-1.mp3');
+var soundlaugh2:HTMLAudioElement = new Audio('assets/laugh-2.mp3');
+var soundsnare:HTMLAudioElement = new Audio('assets/snare.mp3');
 
 var Reihenfolge:Array<number> = [1,1,1,3,2,3,1,2,1];
 var i:number = 0;
