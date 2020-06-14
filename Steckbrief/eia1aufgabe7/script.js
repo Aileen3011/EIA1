@@ -84,3 +84,4 @@ window.onload = function () {
         }, 500);
     }
 };
+//# sourceMappingURL=script.js.map
