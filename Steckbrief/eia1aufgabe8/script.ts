@@ -1,17 +1,6 @@
-var soundA:HTMLAudioElement = new Audio('assets/A.mp3');
-var soundC:HTMLAudioElement = new Audio('assets/C.mp3');
-var soundF:HTMLAudioElement = new Audio('assets/F.mp3');
-var soundG:HTMLAudioElement = new Audio('assets/G.mp3');
-var soundhihat:HTMLAudioElement = new Audio('assets/hihat.mp3');
-var soundkick:HTMLAudioElement = new Audio('assets/kick.mp3');
-var soundlaugh1:HTMLAudioElement = new Audio('assets/laugh-1.mp3');
-var soundlaugh2:HTMLAudioElement = new Audio('assets/laugh-2.mp3');
-var soundsnare:HTMLAudioElement = new Audio('assets/snare.mp3');
-
 var Reihenfolge:Array<number> = [1,1,1,3,2,3,1,2,1];
 var i:number = 0;
-var newBeat:number=0;
-var myvar:any;
+var myvar:number;
 var wahl:number = 0;
 var recMode:boolean = false;
 
@@ -69,64 +58,57 @@ function sound (wahl){
     }
     switch (wahl){
         case 1: if(recMode==true){
-                    Reihenfolge[newBeat]=wahl;
-                    newBeat++;
+            Reihenfolge.push(1);
                 }
-                soundhihat.play();
+                playSample('assets/hihat.mp3');
             break;
         case 2: if(recMode==true){
-                    Reihenfolge[newBeat]=wahl;
-                    newBeat++;
+            Reihenfolge.push(2);
                 }
-                soundkick.play();
+                playSample('assets/kick.mp3');
             break;
         case 3: if(recMode==true){
-                    Reihenfolge[newBeat]=wahl;
-                    newBeat++;
+            Reihenfolge.push(3);
                 }
-                soundsnare.play();
+                playSample('assets/snare.mp3');
             break;
         case 4: if(recMode==true){
-                    Reihenfolge[newBeat]=wahl;
-                    newBeat++;
+            Reihenfolge.push(4);
                 }
-                soundA.play();
+                playSample('assets/A.mp3');
             break;
         case 5: if(recMode==true){
-                    Reihenfolge[newBeat]=wahl;
-                    newBeat++;
+            Reihenfolge.push(5);
                 }
-                soundC.play();
+                playSample('assets/C.mp3');
             break;
         case 6: if(recMode==true){
-                    Reihenfolge[newBeat]=wahl;
-                    newBeat++;
+            Reihenfolge.push(6);
                 }
-                soundF.play();
+                playSample('assets/F.mp3');
             break;
         case 7: if(recMode==true){
-                    Reihenfolge[newBeat]=wahl;
-                    newBeat++;
+            Reihenfolge.push(7);
                 }
-                soundG.play();
+                playSample('assets/G.mp3');
             break;
         case 8: if(recMode==true){
-                    Reihenfolge[newBeat]=wahl;
-                    newBeat++;
+            Reihenfolge.push(8);
                 }
-                soundlaugh1.play();
+                playSample('assets/laugh-1.mp3');
             break;
         case 9: if(recMode==true){
-                    Reihenfolge[newBeat]=wahl;
-                    newBeat++;
+            Reihenfolge.push(9);
                 }
-                soundlaugh2.play();
+                playSample('assets/laugh-2.mp3');
             break;
     }
     
 }
     
 function drummachine(){
+
+i=0;
 document.getElementById("play").style.display = 'none';  
 document.getElementById('pause').style.display = 'block';
 
@@ -147,7 +129,7 @@ function pause(){
 }
 
 function del(){
-    Reihenfolge = [];
+    Reihenfolge=[];
     window.alert("Beat gelöscht");
 }
 
@@ -155,8 +137,7 @@ function rec(){
     if(recMode==false){
         document.getElementById('rec').style.color = 'red';
         recMode=true;
-        Reihenfolge = [];
-        newBeat = 0;
+        Reihenfolge=[];
     }else{
         recMode=false;
         document.getElementById('rec').style.color = 'white';
@@ -164,5 +145,9 @@ function rec(){
     
 
 }
-    
+   
+function playSample(mp3:string){
+    const sound: HTMLAudioElement = new Audio(mp3);
+    sound.play();
+}
 }

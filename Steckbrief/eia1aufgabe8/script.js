@@ -1,15 +1,5 @@
-var soundA = new Audio('assets/A.mp3');
-var soundC = new Audio('assets/C.mp3');
-var soundF = new Audio('assets/F.mp3');
-var soundG = new Audio('assets/G.mp3');
-var soundhihat = new Audio('assets/hihat.mp3');
-var soundkick = new Audio('assets/kick.mp3');
-var soundlaugh1 = new Audio('assets/laugh-1.mp3');
-var soundlaugh2 = new Audio('assets/laugh-2.mp3');
-var soundsnare = new Audio('assets/snare.mp3');
 var Reihenfolge = [1, 1, 1, 3, 2, 3, 1, 2, 1];
 var i = 0;
-var newBeat = 0;
 var myvar;
 var wahl = 0;
 var recMode = false;
@@ -61,70 +51,62 @@ window.onload = function () {
         switch (wahl) {
             case 1:
                 if (recMode == true) {
-                    Reihenfolge[newBeat] = wahl;
-                    newBeat++;
+                    Reihenfolge.push(1);
                 }
-                soundhihat.play();
+                playSample('assets/hihat.mp3');
                 break;
             case 2:
                 if (recMode == true) {
-                    Reihenfolge[newBeat] = wahl;
-                    newBeat++;
+                    Reihenfolge.push(2);
                 }
-                soundkick.play();
+                playSample('assets/kick.mp3');
                 break;
             case 3:
                 if (recMode == true) {
-                    Reihenfolge[newBeat] = wahl;
-                    newBeat++;
+                    Reihenfolge.push(3);
                 }
-                soundsnare.play();
+                playSample('assets/snare.mp3');
                 break;
             case 4:
                 if (recMode == true) {
-                    Reihenfolge[newBeat] = wahl;
-                    newBeat++;
+                    Reihenfolge.push(4);
                 }
-                soundA.play();
+                playSample('assets/A.mp3');
                 break;
             case 5:
                 if (recMode == true) {
-                    Reihenfolge[newBeat] = wahl;
-                    newBeat++;
+                    Reihenfolge.push(5);
                 }
-                soundC.play();
+                playSample('assets/C.mp3');
                 break;
             case 6:
                 if (recMode == true) {
-                    Reihenfolge[newBeat] = wahl;
-                    newBeat++;
+                    Reihenfolge.push(6);
                 }
-                soundF.play();
+                playSample('assets/F.mp3');
                 break;
             case 7:
                 if (recMode == true) {
-                    Reihenfolge[newBeat] = wahl;
-                    newBeat++;
+                    Reihenfolge.push(7);
                 }
-                soundG.play();
+                playSample('assets/G.mp3');
                 break;
             case 8:
                 if (recMode == true) {
-                    Reihenfolge[newBeat] = wahl;
-                    newBeat++;
+                    Reihenfolge.push(8);
                 }
-                soundlaugh1.play();
+                playSample('assets/laugh-1.mp3');
                 break;
             case 9:
                 if (recMode == true) {
-                    Reihenfolge[newBeat] = wahl;
-                    newBeat++;
+                    Reihenfolge.push(9);
                 }
-                soundlaugh2.play();
+                playSample('assets/laugh-2.mp3');
                 break;
         }
     }
     function drummachine() {
+        i = 0;
         document.getElementById("play").style.display = 'none';
         document.getElementById('pause').style.display = 'block';
         myvar = setInterval(function () {
@@ -146,12 +128,15 @@ window.onload = function () {
             document.getElementById('rec').style.color = 'red';
             recMode = true;
             Reihenfolge = [];
-            newBeat = 0;
         }
         else {
             recMode = false;
             document.getElementById('rec').style.color = 'white';
         }
+    }
+    function playSample(mp3) {
+        var sound = new Audio(mp3);
+        sound.play();
     }
 };
 //# sourceMappingURL=script.js.map
